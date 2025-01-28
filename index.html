@@ -26,7 +26,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'bike-primary': '#E76F51',
+                'bike-primary': 'rgb(231, 111, 81)',
                 'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
               }
             }
@@ -44,7 +44,9 @@
   <body class="font-family">
 
     <!-- header section -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto lg:mb-[160px] mb-20">
+
+      <!-- nav section -->
 
       <nav class="mb-7 lg:mb-12">
         <div class="navbar bg-base-100">
@@ -232,7 +234,99 @@
 
     <!-- main section -->
 
-    <main class="md:container mx-auto"></main>
+    <main class="md:container mx-auto">
+      <!-- featured section -->
+      <div class="md:mb-24 mb-12">
+        <!-- text content -->
+        <div class="lg:mb-11 mb-6">
+          <h1
+            class="text-center lg:text-5xl md:text-3xl text-2xl font-bold mb-2">Fetured
+            Bikes In
+            This
+            Year</h1>
+          <p class="text-center text-bike-primary">Best bike collection</p>
+          <div class="text-center bg-bike-primary h-0.5 w-20 mx-auto"></div>
+        </div>
+
+        <div
+          class="flex items-center justify-evenly flex-col md:flex-row gap-20">
+          <div>
+            <img src="images/others/feature-bike.png" alt>
+          </div>
+          <div>
+            <img src="images/others/feature-bike.png" alt>
+          </div>
+          <div>
+            <img src="images/others/feature-bike.png" alt>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- latest Bike Section -->
+
+      <section class="my-24">
+        <h3 class="lg:text-5xl text-4xl font-bold text-center">latest News</h3>
+
+        <!-- cards -->
+        <div
+          class="flex items-center lg:justify-between lg:gap-8 gap-4 flex-col lg:flex-row lg:mt-12 mt-6">
+
+          <!-- card-1 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="images/others/latest1.png" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button
+                  class="bg-bike-primary px-4 py-2 lg:px-4 lg:py-2 rounded-lg cursor-pointer  text-white font-bold ">Read
+                  More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="images/others/latest2.png" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">Motorcycles & Scooters</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button
+                  class="bg-transparent px-4 py-2 lg:px-4 lg:py-2 rounded-lg cursor-pointer  text-bike-primary font-bold border-bike-primary border-2">Read
+                  More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="images/others/latest3.png" />
+            </figure>
+            <div class="card-body space-y-5">
+              <h2 class="card-title">2021 Honda CBR500R</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.</p>
+              <div class="card-actions justify-start">
+                <button
+                  class="bg-transparent px-4 py-2 lg:px-4 lg:py-2 rounded-lg cursor-pointer  text-bike-primary font-bold border-bike-primary border-2">Read
+                  More</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
 
     <!-- footer section -->
     <footer></footer>
